@@ -1,5 +1,5 @@
 # Desafio-DIO-Felipão
-## Desafio classificação de nível Heroi 🦸‍♀️ 
+## Desafio classificação de nível Herói 🦸‍♀️ 
 
 * No arquivo __index__ foi utilizado uma estrutura "Switch Case" ✔️
 
