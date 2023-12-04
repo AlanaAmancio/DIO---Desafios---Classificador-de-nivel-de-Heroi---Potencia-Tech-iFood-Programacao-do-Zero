@@ -1,43 +1,52 @@
-let heroi = Frida
-let pontuacaoDoHeroi = 1020
-let XP < 1000 = Ferro; XP > 1001 && 2000 = Bronze; XP > 2001 && 5000 = Prata; XP > 6001 && 7000 = Ouro; XP > 7001 && 8000 = Platina; XP > 8001 && 9000 = Ascendente; XP > 9001 && 10000 = Imortal; XP >= 10001  = Radiante
- switch (XP) {
-    case "Ferro" :
-    console.log("O Herói Frida está no nível Ferro")
+let nomeHeroi = "Frida"
+let xp = 10001
+
+let ferro = (xp <= 1000) 
+let bronze = (xp >= 1001 && xp <= 2000)
+let prata = (xp >= 2001 && xp <= 5000)
+let ouro = (xp >= 5001 && xp <= 7000)
+let platina = (xp >= 7001 && xp <= 8000)
+let ascendente = (xp >= 8001 && xp <= 9000)
+let imortal = (xp >= 9001 && xp <= 10000)
+let radiante = (xp >= 10001)
+
+let resultado = (xp = ferro || bronze || prata || ouro ||platina ||ascendente || imortal || radiante)
+
+ switch (resultado) {
+    case (resultado = ferro) :
+        console.log(`O heroi de nome ${nomeHeroi} está no nivel ferro.`)
     break;
 
-    case "Bronze" :
-    console.log("O Herói Frida está no nível Bronze")
+    case (resultado = bronze) :
+        console.log(`O heroi de nome ${nomeHeroi} está no nivel bronze.`)
     break;
 
-    case "Prata" :
-    console.log("O Herói Frida está no nível Prata")
+    case (resultado = prata) :
+        console.log(`O heroi de nome ${nomeHeroi} está no nivel prata.`)
     break;
 
-    case "Ouro" :
-    console.log("O Herói Frida está no nível Ouro")
+    case (resultado = ouro) :
+        console.log(`O heroi de nome ${nomeHeroi} está no nivel ouro.`)
     break;
 
-    case "Platina" :
-    console.log("O Herói Frida está no nível Platina")
+    case (resultado = platina) :
+        console.log(`O heroi de nome ${nomeHeroi} está no nivel platina.`)
     break;
 
-    case "Ascendente" :
-    console.log("O Herói Frida está no nível Ascendente")
+    case (resultado= ascendente) :
+        console.log(`O heroi de nome ${nomeHeroi} está no nivel ascendente.`)
     break;
 
-    case "Imotal" :
-    console.log("O Herói Frida está no nível Imortal")
+    case (resultado = imortal) :
+        console.log(`O heroi de nome ${nomeHeroi} está no nivel imortal.`)
     break;
 
-    case "Radiante" :
-    console.log("O Herói Frida está no nível Radiante")
+    case (resultado = radiante) :
+        console.log(`O heroi de nome ${nomeHeroi} está no nivel radiante.`)
     break;
 
     default:
-    console.log("Fim de Jogo")
+    console.log("Nível inexistente")
 
 
  }
-
-console.log
