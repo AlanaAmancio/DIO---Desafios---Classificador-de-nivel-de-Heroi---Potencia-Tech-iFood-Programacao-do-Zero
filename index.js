@@ -1,6 +1,6 @@
 let nomeHeroi = "Frida"
 let xp = 10001
-
+let resultado = (xp = ferro || bronze || prata || ouro ||platina ||ascendente || imortal || radiante)
 let ferro = (xp <= 1000) 
 let bronze = (xp >= 1001 && xp <= 2000)
 let prata = (xp >= 2001 && xp <= 5000)
@@ -10,7 +10,7 @@ let ascendente = (xp >= 8001 && xp <= 9000)
 let imortal = (xp >= 9001 && xp <= 10000)
 let radiante = (xp >= 10001)
 
-let resultado = (xp = ferro || bronze || prata || ouro ||platina ||ascendente || imortal || radiante)
+
 
  switch (resultado) {
     case (resultado = ferro) :
